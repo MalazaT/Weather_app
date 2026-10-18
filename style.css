@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/cloudyy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app {
+    background-color: rgba(227, 227, 236, 0.9);
+    padding: 40px;
+    border-radius: 30px;
+    border: 5px solid #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+}
+
+input {
+    padding: 15px;
+    width: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #1a1a1a;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(24, 1, 122);
+}
+
+#weatherResult {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.forecast-day {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+}
+
+.forecast-day img {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 90%;
+    }
+
+    #forecast {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forecast-day {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
