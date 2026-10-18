@@ -15,7 +15,7 @@ function getLocation() {
 async function showPosition(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    const apiKey = "YOUR_API_KEY";
+    const apiKey = "fbbee93ee91846a31c3796215f4487fe";
 
     try {
         // Current Weather
@@ -77,7 +77,7 @@ function showError(error) {
 
 async function getWeather() {
     const city = document.getElementById("cityInput").value;
-    const apiKey = "YOUR_API_KEY";
+    const apiKey = "fbbee93ee91846a31c3796215f4487fe";
 
     const urlCurrent =
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
