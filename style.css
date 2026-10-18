@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('images/cloudyy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.app{
+    background-color: rgb(227, 227, 236);
+    padding: 40px;
+    border-radius: 50px;
+    border: 10px solid #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input{
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button{
+   padding: 20px;
+   background-color: #1a1a1a;
+   color: rgb(247, 242, 242);
+   cursor: pointer;
+   border: 20px ;
+   border-radius: 50px;
+
+}
+
+button:hover{
+    background:rgb(24, 1, 122);
+}
+
+#forecast{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.forecast-day{
+    background: blueviolet;
+    padding: 10px;
+    border: 8px;
+    text-align: center;
+    width: 80px;
+}
+
+@media(max-width:600px){
+    #forecast{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forecast-day{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
