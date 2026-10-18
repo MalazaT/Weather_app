@@ -15,7 +15,7 @@ function getLocation() {
 async function showPosition(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    const apiKey = "fbbee93ee91846a31c3796215f4487fe";
+    const apiKey = "ae6806d9513fae7f9a1738dfc116e221";
 
     try {
         // Current Weather
@@ -77,7 +77,7 @@ function showError(error) {
 
 async function getWeather() {
     const city = document.getElementById("cityInput").value;
-    const apiKey = "fbbee93ee91846a31c3796215f4487fe";
+    const apiKey = "ae6806d9513fae7f9a1738dfc116e221";
 
     const urlCurrent =
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
